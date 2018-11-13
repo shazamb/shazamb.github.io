@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>RIP</title>
+<script type="text/javascript">
+function clickme()
+{
+var time;
+var t= new Date();
+time= t.getHours();
+	if(time<12)
+	{
+	alert("Good Morning");
+	}
+	
+	else if(time>12 && time<=16)
+	{
+	alert("Good afternoon");
+	}
+	
+	else(time>16)
+	{
+	alert("Good night");
+	}
+}
+</script>
+</head>
+<body>
+<form action="a.html">
+Username<input type="text" ><br>
+Password<input type="Password"><br>
+<input type="submit">
+<input type="button">
+<input type="button" value="clickme" onclick="clickme()">
+</form>
+</html>
